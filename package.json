@@ -1,0 +1,17 @@
+{
+  "name": "local_scryfall",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "jest": "^30.2.0"
+  },
+  "dependencies": {
+    "lokijs": "^1.5.12"
+  }
+}
