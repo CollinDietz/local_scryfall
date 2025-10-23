@@ -26,5 +26,5 @@ function searchCards(queryText, jsonPath) {
   }));
 }
 
-  const result = searchCards('t:dragon', 'oracle-cards-20251022090300.json');
+  const result = searchCards('t:dragon c:r cmc>3', 'oracle-cards-20251022090300.json');
   console.log(result.slice(0, 5));
