@@ -16,7 +16,7 @@ function searchCards(queryText, jsonPath) {
   console.log(lokiQuery);
 
   const results = cards.find(lokiQuery);
-  console.log(results);
+  // console.log(results);
 
   return results.map((c) => ({
     name: c.name,
@@ -26,5 +26,5 @@ function searchCards(queryText, jsonPath) {
   }));
 }
 
-  const result = searchCards('t:dragon c:r cmc>3', 'oracle-cards-20251022090300.json');
+  const result = searchCards('t:Dragon c:R cmc>3', 'oracle-cards-20251022090300.json');
   console.log(result.slice(0, 5));
