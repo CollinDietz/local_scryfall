@@ -5,6 +5,10 @@
   "scripts": {
     "test": "jest"
   },
+  "bin": {
+    "local_scryfall": "./index.js"
+  },
+  "type": "module",
   "author": "",
   "license": "ISC",
   "description": "",
@@ -12,6 +16,9 @@
     "jest": "^30.2.0"
   },
   "dependencies": {
-    "lokijs": "^1.5.12"
+    "axios": "^1.12.2",
+    "lokijs": "^1.5.12",
+    "minimist": "^1.2.8",
+    "ora": "^8.2.0"
   }
 }

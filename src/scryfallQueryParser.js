@@ -24,7 +24,7 @@ const FIELD_MAP = {
  * Parse a query string like "t:dragon c:r cmc>3"
  * into a structured JSON object.
  */
-function parseQueryToObject(query) {
+export function parseQueryToObject(query) {
   const tokens = tokenize(query);
   const parsed = tokens.map(parseToken).filter(Boolean);
   return mergeTokens(parsed);
@@ -96,5 +96,3 @@ function mergeTokens(tokens) {
 
   return result;
 }
-
-module.exports = { parseQueryToObject };
